@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t simihartstein/multi-client ./client
-  - docker build -t simihartstein/multi-nginx ./nginxd
+  - docker build -t simihartstein/multi-nginx ./nginx
   - docker build -t simihartstein/multi-server ./server
   - docker build -t simihartstein/multi-worker ./worker
   # Log in to the docker CLI
